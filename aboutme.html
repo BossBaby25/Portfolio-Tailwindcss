@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- tailwind css --->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.38.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        penguin: '#FFFBF0',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/aa28779bf3.js" crossorigin="anonymous"></script>
+
+    <title>Meraj Serker</title>
+</head>
+
+<body class="font-mono container mx-auto">
+
+    <!--Navbar-->
+    <div class="navbar bg-base-100 fixed sticky absolute top-0 left-0 right-0">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="navbar-center">
+
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-ghost normal-case text-xl" href="index.html">Meraj's Portfolio</a>
+        </div>
+    </div>
+
+
+    <!--About me-->
+    <div class="bg-base-200 lg:flex">
+        <div class="flex-2 py-5 my-5">
+            <img src="images/myimg.jpeg" class="max-w-sm rounded-lg shadow-2xl" />
+        </div>
+        <div class="flex-1 mx-5">
+            <h1 class="text-3xl font-semibold border-b-4 my-5">About</h1>
+            <p class="py-6">I'm a rational thinking person, always prefer critical thinking rather than wishful
+                thinking. Being an
+                enthusiast about science and mathematics, I always find it exhilarating to solve problems. I started
+                programming in my college years and still enjoy coding on a regular basis. I am passionate about
+                technologies and enjoy working with Artificial Intelligence. I am a creative designer and developer,
+                who
+                aims to work with businesses and marginalized communities to bring their passions to life. I offer
+                both design and development services of web applications or websites!</p>
+
+            <div class="stats shadow mx-5">
+
+                <div class="stat">
+                    <div class="stat-figure text-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-8 h-8 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="stat-title">Happy Clients</div>
+                    <div class="stat-value text-primary">30</div>
+                    <div class="stat-desc">21% more than last month</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-figure text-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="inline-block w-8 h-8 stroke-current">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-title">Projects</div>
+                    <div class="stat-value text-secondary">30</div>
+                    <div class="stat-desc">31% more than last month</div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-figure text-secondary">
+                        <div class="avatar online">
+                            <div class="w-16 rounded-full">
+                                <img src="images/myimg.jpeg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-value">86%</div>
+                    <div class="stat-title">Tasks done</div>
+                    <div class="stat-desc text-secondary">31 tasks remaining</div>
+                </div>
+
+            </div>
+            <h1 class="text-3xl font-semibold border-b-4 my-5">Skills</h1>
+
+            <div class="flex mx-5">
+
+                <div class="flex-1">
+                    <div>
+                        <p>HTML:</p>
+                    </div>
+                    <div><progress class="progress w-56" value="100" max="100"></progress></div>
+                    <div>
+                        <p>CSS:</p>
+                    </div>
+                    <div><progress class="progress w-56" value="100" max="100"></progress></div>
+                    <div>
+                        <p>JAVASCRIPT:</p>
+                    </div>
+                    <div><progress class="progress w-56" value="90" max="100"></progress></div>
+                </div>
+                <div class="flex-1">
+                    <div>
+                        <p>REACT:</p>
+                    </div>
+                    <div><progress class="progress w-56" value="80" max="100"></progress></div>
+                    <div>
+                        <p>MONGODB:</p>
+                    </div>
+                    <div><progress class="progress w-56" value="80" max="100"></progress></div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer class="bg-penguin h-24">
+        <p class="text-center">copyright@2022</p>
+        <p class="text-center pt-4">
+            <a href="" class="px-4"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="px-4"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="px-4"><i class="fa-brands fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

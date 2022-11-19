@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- tailwind css --->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.38.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        penguin: '#FFFBF0',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/aa28779bf3.js" crossorigin="anonymous"></script>
+
+    <title>Meraj Serker</title>
+</head>
+
+<body class="font-mono container mx-auto">
+
+    <!--Navbar-->
+    <div class="navbar bg-base-100 fixed sticky absolute top-0 left-0 right-0">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="navbar-center">
+
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-ghost normal-case text-xl" href="index.html">Meraj's Portfolio</a>
+        </div>
+    </div>
+   
+    <!--header-->
+    <header class="bg-penguin mt-8 pb-32 pt-12 sm:px-8">
+        <section class="container mx-auto sm:flex items-center justify-around">
+            <div class="space-y-4">
+                <h1 class="text-2xl sm:text-5xl uppercase font-bold">
+                    <span>Hey I'm </span>
+                    <br>
+                    <span class="text-cyan-700">Meraj</span>
+                </h1>
+                <p><strong class="text-2xl">Web Developer</strong> from Dhaka,Bangladesh.I create custom websites.</p>
+                <a href="aboutme.html" class="btn uppercase bg-cyan-500 py-4 px-7 rounded-xl text-white font-semibold"><i
+                        class="fa-solid fa-arrow-right"></i> About Me </a>
+            </div>
+            <div class="pt-8">
+                <div class="w-48">
+                    <img class="rounded-full" src="images/myimg.jpeg" />
+                </div>
+            </div>
+        </section>
+    </header>
+
+     <!--Projects-->
+
+     <div class="card card-side bg-base-100 shadow-xl my-5">
+        <div class="w-1/4 p-5 rounded-lg">
+            <figure><img src="images/Blog-Cover.gif" alt=""/></figure>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">You can see some of my projects!</h2>
+          <p>Click the button to watch my projects.</p>
+          <div class="card-actions justify-end">
+            <a href="projects.html" class="btn btn-dark">Projects</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <!--Experiences -->
+
+      <div class="card card-side bg-base-100 shadow-xl my-5">
+        
+        <div class="card-body">
+          <h2 class="card-title">Where I've Worked!</h2>
+          <p>Click the button to watch where I've Worked.</p>
+          <div class="card-actions justify-start">
+            <a class="btn btn-dark">Experiences</a>
+          </div>
+        </div>
+        <div class="w-1/4 p-5 rounded-lg">
+            <figure><img src="images/ux-design.gif" alt=""/></figure>
+        </div>
+      </div>
+
+
+    <!--Footer-->
+
+    <footer class="bg-penguin h-24">
+        <p class="text-center">copyright@2022</p>
+        <p class="text-center pt-4">
+            <a href="" class="px-4"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="px-4"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="px-4"><i class="fa-brands fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

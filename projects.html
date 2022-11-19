@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- tailwind css --->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.38.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        penguin: '#FFFBF0',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/aa28779bf3.js" crossorigin="anonymous"></script>
+
+    <title>Meraj Serker</title>
+</head>
+
+<body class="font-mono container mx-auto">
+
+    <!--Navbar-->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="navbar-center">
+
+        </div>
+        <div class="navbar-end">
+            <a class="btn btn-ghost normal-case text-xl" href="index.html">Meraj's Portfolio</a>
+        </div>
+    </div>
+
+    <!--Title-->
+
+    
+    <div class="flex flex-col w-full">
+        <h1 class="text-3xl font-semibold text-center">Projects</h1> 
+        <div class="divider"></div> 
+      </div>
+
+    <!--quick btn-->
+
+    <div class="justify-around lg:flex">
+        <div>
+            <button class="btn w-36">ALL</button>
+        </div>
+        <div>
+            <button class="btn w-36">MONGODB</button>
+        </div>
+        <div>
+            <button class="btn w-36">JAVASCRIPT</button>
+        </div>
+        <div>
+            <button class="btn w-36">REACT</button>
+        </div>
+    </div>
+
+    <!--projects card-->
+
+    <div class="lg:flex">
+        <div class="p-5">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/Q.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Quizzer!</h2>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-dark">Git Repository</button>
+                        <a href="https://fluffy-starship-9232dd.netlify.app" target="_blank" class="btn btn-dark">Live
+                            Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/A.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">ife-advice!</h2>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-dark">Git Repository</button>
+                        <a href="https://a11-life-advice.web.app/" target="_blank" class="btn btn-dark">Live Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/speedtyper.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Check your typing skill!</h2>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-dark">Git Repository</button>
+                        <a href="https://splendorous-clafoutis-20b201.netlify.app/" target="_blank" class="btn btn-dark">Live Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+
+    <footer class="bg-penguin h-24">
+        <p class="text-center">copyright@2022</p>
+        <p class="text-center pt-4">
+            <a href="" class="px-4"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="px-4"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="px-4"><i class="fa-brands fa-linkedin"></i></a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
